@@ -1,0 +1,14 @@
+<div class="container">
+  <h1 class="display-4 text-center">Heroes</h1>
+  <p class="text-end">By EliasArm</p>
+  <hr class="border border-primary border-1 opacity-50">
+  <div class="row">
+    <div class="col">
+      <dbz-list [characterList]="characterList" (onDeleteCharacter)="deleteCharacter($event)"></dbz-list>
+    </div>
+    <div class="col">
+      <dbz-add-character (onNewCharacter)="newCharacter($event)"></dbz-add-character>
+    </div>
+  </div>
+</div>
+
